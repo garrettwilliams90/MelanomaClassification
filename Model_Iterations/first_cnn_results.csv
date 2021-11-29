@@ -1,3 +1,0 @@
-,Loss,Accuracy,Recall,AUC-ROC
-Training,0.009,0.997,0.985,1.0
-Validation,0.793,0.947,0.808,0.93
