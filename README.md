@@ -1,4 +1,4 @@
-# Melanoma Classification
+# Identifying Melanoma in Images using Deep Learning
 ![Melanoma?](https://raw.githubusercontent.com/garrettwilliams90/MelanomaClassification/main/Images/sunscreen-question-mark.jpeg)
 
 ## Business Understanding
@@ -12,6 +12,7 @@
 ## Conclusion
 
 ## Repository Navigation
+Notebooks were run using Kaggle and can be found [here](https://www.kaggle.com/garrettwilliams90/code)
 ```
 ├── Images
 ├── Notebooks
