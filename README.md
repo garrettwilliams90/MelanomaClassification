@@ -84,6 +84,7 @@ The 3 datasets that were reformatted by Chris Deotte can be found [here](https:/
 │               └── vgg16-model.ipynb
 │       └── eda-and-data-preprocessing.ipynb
 ├── README.md
-├── presentation.pdf
-└── melanoma-classification-final-notebook.ipynb
+├── final_model.h5
+├── melanoma-classification-summary.ipynb
+└── requirements.txt
 ```
