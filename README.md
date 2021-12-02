@@ -7,7 +7,7 @@ I'm identifying melanoma in images of skin lesions using neural networks, more s
 
 Skin cancer is one of the most common types of cancer in the world. Melanoma, specifically, is responsible for 75% of skin cancer deaths, despite being the least common skin cancer. According to the [World Cancer Research Fund](https://www.wcrf.org/dietandcancer/skin-cancer-statistics/), Australia has the highest rate of Melanoma per capita. [Cancer Australia](https://www.canceraustralia.gov.au/cancer-types/melanoma/statistics) estimates close to 17,000 new cases of Melanoma have been diagnosed in 2021, resulting in over 1,000 deaths this year. 
 
-Unlike other cancers though, skin cancer can be visibly seen. By using image classification tools, my work aims to accurately predict if a skin lesion is malignant or benign. By identifying if the skin has Melanoma early on, lives can be saved. My hope is that you, the Australian Department of Health, would use your resources in conjuction with my model to develop and market an app for the benefit of your citizens. Using their mobile phone, they can easily take a picture and recognize whether they need to go to a dermatologist for further diagnosis.
+Unlike other cancers though, skin cancer can be visibly seen. By using image classification tools, my work aims to accurately predict if a skin lesion is malignant or benign. By identifying if the skin has Melanoma early on, lives can be saved. My hope is that you, the Australian Department of Health, would use your resources in conjuction with my model to develop and market an app for the benefit of your citizens. Using their mobile phones, they can easily take a picture and recognize whether they need to go to a dermatologist for further diagnosis.
 
 ## Data Understanding
 
@@ -27,7 +27,7 @@ The following is the citation of the original dataset under CC BY-NC 4.0:
 
 One limitation of the dataset is the size of images. Since the images had different sizes and were too large for my code to run, I used resized images, found [here](https://www.kaggle.com/cdeotte/jpeg-melanoma-512x512). Another major limitation from this dataset is how imbalanced the target is. 98% of the over 33,000 images were classified as benign. To combat this imbalance, I added malignant images from the 2019 SIIM-ISIC Melanoma Classification competition, found [here](https://www.kaggle.com/cdeotte/jpeg-isic2019-512x512). I also added malignant images that weren't used in the 2019 or 2020 competitions, found [here](https://www.kaggle.com/cdeotte/malignant-v2-512x512).
 
-The final dataset after combining the 3 had over 38,000 images. As a baseline understanding. 85.1% of the validation images are benign and 14.9% of the validation images are malignant. This means that the models accuracy would be 85% if it always predicted 0.
+The final dataset after combining the 3 had over 38,000 images. As a baseline understanding. 85.1% of the validation images are benign and 14.9% of the validation images are malignant. This means that the models accuracy would be 85% if it always predicted 'Benign'.
 
 ![Benign Skin Lesions](https://raw.githubusercontent.com/garrettwilliams90/MelanomaClassification/main/Images/Examples-of-benign-skin-lesions.png)
 
@@ -57,12 +57,15 @@ My model accurately predicts the diagnosis of a skin lesion 93.8% of the time an
 
 ## Conclusion
 
-The Australian Department of Health can develop and market a mobile app for the public that uses my model to classify if a person has melanoma or not. This would result in quicker reactions to seek out a professionally trained Dermatologist, which could save lives. 
+The Australian Department of Health can develop and market a mobile app for the public that uses my model to classify if a person has melanoma or not. This would result in quicker reactions to seek out professionally-trained Dermatologists, which could save lives. 
 
-If I had more time to work on this project, I would try and collect more malignant images to combat the class imbalance. I would also like to pay for a bigger cloud server to help with memory allocation for such a large dataset. Lastly, it would be interesting to run the model on only those with darker skin tones as it theoretically would be harder to classify if a person has Melanoma.
+If I had more time to work on this project, I would try and collect more malignant images to combat the class imbalance, or use tools like SMOTE or `class_weight`. I would also like to pay for a bigger cloud server to help with memory allocation for such a large dataset. Lastly, it would be interesting to run the model on only those with darker skin tones as it theoretically would be harder to classify if a person has Melanoma.
 
 ## Repository Navigation
-Notebooks were run using Kaggle and can be found [here](https://www.kaggle.com/garrettwilliams90/code)
+All notebooks were run using Kaggle and can be found [here](https://www.kaggle.com/garrettwilliams90/code). <br>
+My final notebook specifically can be found [here on Kaggle](https://www.kaggle.com/garrettwilliams90/melanoma-classification-final-notebook) or [here on Github](https://github.com/garrettwilliams90/MelanomaClassification/blob/main/melanoma-classification-final-notebook.ipynb) <br>
+Orignal Data can be found [here on Kaggle](https://www.kaggle.com/c/siim-isic-melanoma-classification/overview) or [here on the ISIC Archives](https://challenge2020.isic-archive.com/) <br>
+The 3 datasets that were reformatted by Chris Deotte can be found [here](https://www.kaggle.com/cdeotte/jpeg-melanoma-512x512), [here](https://www.kaggle.com/cdeotte/jpeg-isic2019-512x512), and [here](https://www.kaggle.com/cdeotte/malignant-v2-512x512).
 ```
 ├── Images
 ├── Notebooks
