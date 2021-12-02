@@ -47,15 +47,17 @@ The key metrics I focused on were Loss, Accuracy, Recall, and AUC-ROC. I focuese
 
 ## Evaluation
 
-Our final model will be the VGG16 because it predicted the highest accuracy and recall score, while not overfitting too much to the training data. Again, recall is the second evaluation metric because a low score would mean our model is predicting a skin lesion is benign when it's actually malignant. This implies you're healthy when you actually aren't and need to seek medical assistance. Now, we will take our VGG16 model and evaluate it on the testing set, which we held out. This is so we can truly evaluate our model on unseen images
+The final model will be the VGG16 because it had the highest accuracy and recall score. Again, recall is the second evaluation metric because a low score would mean our model is predicting a skin lesion is benign when it's actually malignant. This implies you're healthy when you actually aren't and need to seek medical assistance. Now, I'll take our VGG16 model and evaluate it on the testing set, which I held out. This is so I can truly evaluate our model on unseen images
 
 ![Confusion Matrix](https://raw.githubusercontent.com/garrettwilliams90/MelanomaClassification/main/Images/final-model-confusion-matrix.png)
 
 ![Metrics](https://raw.githubusercontent.com/garrettwilliams90/MelanomaClassification/main/Images/final-model-metrics.png)
 
+My model accurately predicts the diagnosis of a skin lesion 93.8% of the time and incorrectly labels the lesion as benign on 16.3% of the time. As a reminder, my baseline understanding had an accuracy of 85.1% and a recall score of 0.
+
 ## Conclusion
 
-The Australian Department of Health can develop and market a mobile app for the public that uses my model to classify if a person has melanoma or not. This would result in quicker reactions to seek out a professionally trained Dermatologist, which could save lives. My model accurately predicts the diagnosis of a skin lesion 93.8% of the time and incorrectly labels the lesion as benign on 16.3% of the time.
+The Australian Department of Health can develop and market a mobile app for the public that uses my model to classify if a person has melanoma or not. This would result in quicker reactions to seek out a professionally trained Dermatologist, which could save lives. 
 
 If I had more time to work on this project, I would try and collect more malignant images to combat the class imbalance. I would also like to pay for a bigger cloud server to help with memory allocation for such a large dataset. Lastly, it would be interesting to run the model on only those with darker skin tones as it theoretically would be harder to classify if a person has Melanoma.
 
