@@ -1,3 +1,14 @@
-# MelanomaClassification
+# Melanoma Classification
+![Melanoma?](https://raw.githubusercontent.com/garrettwilliams90/MelanomaClassification/main/Images/sunscreen-question-mark.jpeg)
 
-I ran my code using Kaggle's servers. You can check my code and outputs at this <a href="https://www.kaggle.com/garrettwilliams90/code">link.</a>
+## Business Understanding
+
+## Data Understanding
+
+## Modeling
+
+## Evaluation
+
+## Conclusion
+
+## Repository Navigation
