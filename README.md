@@ -45,11 +45,11 @@ I ran 6 different models, fitting to the training set and evaluating on the vali
 - Pretrained ResNet50
 - Pretrained InceptionResNetV2
 
-The key metrics I focused on were Loss, Accuracy, Recall, and AUC-ROC. I focuesed on Recall because having False Negatives are more costly than having False Positives. False Negatives is having a malignant skin lesion but predicting that it's benign. This would result in people thinking they're healthy when they arent, which could result in lives being lost.
+The key metrics I focused on were Accuracy, Recall, and AUC-ROC. I focuesed on Recall because having False Negatives are more costly than having False Positives. False Negatives is having a malignant skin lesion but predicting that it's benign. This would result in people thinking they're healthy when they arent, which could result in lives being lost.
 
 ## Evaluation
 
-The final model will be the VGG16 because it had the highest accuracy and recall score. Again, recall is the second evaluation metric because a low score would mean our model is predicting a skin lesion is benign when it's actually malignant. This implies you're healthy when you actually aren't and need to seek medical assistance. Now, I'll take our VGG16 model and evaluate it on the testing set, which I held out. This is so I can truly evaluate our model on unseen images
+The final model will be the VGG16 because it had the highest accuracy and recall score. Again, recall is the second evaluation metric because a low score would mean our model is predicting a skin lesion is benign when it's actually malignant. This implies you're healthy when you actually aren't and need to seek medical assistance. Now, I'll take our VGG16 model and evaluate it on the testing set, which I held out. This is so I can truly evaluate our model on unseen images.
 
 ![Confusion Matrix](https://raw.githubusercontent.com/garrettwilliams90/MelanomaClassification/main/Images/final-model-confusion-matrix.png)
 
@@ -61,7 +61,7 @@ My model accurately predicts the diagnosis of a skin lesion 93.8% of the time an
 
 The Australian Department of Health can develop and market a mobile app for the public that uses my model to classify if a person has melanoma or not. This would result in quicker reactions to seek out professionally-trained Dermatologists, which could save lives. 
 
-If I had more time to work on this project, I would try and collect more malignant images to combat the class imbalance, or use tools like SMOTE or `class_weight`. I would also like to pay for a bigger cloud server to help with memory allocation for such a large dataset. Lastly, it would be interesting to run the model on only those with darker skin tones as it theoretically would be harder to classify if a person has Melanoma.
+In the future, if I had more time to work on this project, I'd use tools to combat the class imbalance, like `SMOTE` and `class_weight`, or even undersampling the benign class. This last option would also result in more memory on Kaggle, allowing the model to learn from the enitre training set (not just a third). Another way to free up more memory is to resize the images to something smaller, like 64x64, but this could mean the model isn't learning as much. Lastly, with the ultimate goal of improving the model, I'd try image augmentation, and increaing the epochs and patience to allow for the model to run longer. 
 
 ## Repository Navigation
 All notebooks were run using Kaggle and can be found [here](https://www.kaggle.com/garrettwilliams90/code). <br>
