@@ -29,7 +29,7 @@ The following is the citation of the original dataset under CC BY-NC 4.0:
 
 One limitation of the dataset is the size of images. Since the images had different sizes and were too large for my code to run, I used resized images, found [here](https://www.kaggle.com/cdeotte/jpeg-melanoma-512x512). Another major limitation from this dataset is how imbalanced the target is. 98% of the over 33,000 images were classified as benign. To combat this imbalance, I added malignant images from the 2019 SIIM-ISIC Melanoma Classification competition, found [here](https://www.kaggle.com/cdeotte/jpeg-isic2019-512x512). I also added malignant images that weren't used in the 2019 or 2020 competitions, found [here](https://www.kaggle.com/cdeotte/malignant-v2-512x512).
 
-The final dataset after combining the 3 had over 38,000 images. As a baseline understanding. 85.1% of the validation images are benign and 14.9% of the validation images are malignant. This means that the models accuracy would be 85% if it always predicted 'Benign'.
+The final dataset after combining the 3 had over 38,000 images. As a baseline understanding. 85.1% of the validation images are benign and 14.9% of the validation images are malignant. This means that the models accuracy would be 85% if it always predicted 'Benign'. All code was run using Kaggle and can be found [here](https://www.kaggle.com/garrettwilliams90/code).
 
 ![Benign Skin Lesions](https://raw.githubusercontent.com/garrettwilliams90/MelanomaClassification/main/Images/Examples-of-benign-skin-lesions.png)
 
