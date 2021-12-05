@@ -8,6 +8,7 @@ the results in JSON format.
 # Import libraries
 import numpy as np
 from flask import Flask, render_template, request, jsonify
+import keras
 from keras.models import load_model 
 from keras.preprocessing import image
 import os
