@@ -11,6 +11,7 @@ from flask import Flask, render_template, request, jsonify
 import keras
 from keras.models import load_model 
 from keras.preprocessing import image
+from PIL import Image
 import os
 
 app = Flask(__name__)
