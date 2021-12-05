@@ -1,3 +1,4 @@
+#Only packages need for app deployment
 certifi==2021.10.8
 click-plugins==1.1.1
 click==8.0.1
