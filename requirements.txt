@@ -72,7 +72,7 @@ cmudict==1.0.2
 colorcet==2.0.6
 colorlog==6.5.0
 colorlover==0.3.0
-conda==4.10.3
+#conda==4.10.3
 configparser==5.0.2
 constantly==15.1.0
 contextily==1.2.0
