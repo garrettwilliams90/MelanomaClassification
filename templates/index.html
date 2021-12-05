@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Spam Detector</title>
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css') }}">
+    </head>
+    <body>
+	<header>
+		<div class="container">
+		    <h2>Do you have Melanoma?</h2>
+	    </div>
+	</header>
+        <div class="container">
+            <h2> Upload an image of your skin lesion</h2>
+            <form action="/predict" method="POST" class="form">
+                <div class="fieldset">
+                    <label>Upload the image:</label>
+                    <input type="file" name="imagefile">
+                </div>
+                <p><input type="submit" class="button" value="Predict image"></p>
+            </form>
+        </div>
+    </body>
+</html>
