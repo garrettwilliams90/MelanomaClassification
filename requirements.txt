@@ -406,7 +406,6 @@ pyemd==0.5.1
 pyerfa==2.0.0
 pyexcel-io==0.6.5
 pyexcel-ods==0.6.0
-pyfasttext==0.4.6
 pyflakes==2.4.0
 pygeos==0.10.2
 pykalman==0.9.5
