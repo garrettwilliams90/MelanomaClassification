@@ -3,6 +3,20 @@ import sklearn
 import keras.models import load_model
 import keras.preprocessing import image
 import numpy as np
+<<<<<<< HEAD
+=======
+from flask import Flask, render_template, request, jsonify
+import keras
+from keras.models import load_model 
+from keras.preprocessing import image
+from PIL import Image
+import os
+
+app = Flask(__name__)
+
+image_folder = os.path.join('static', 'images')
+app.config["UPLOAD_FOLDER"] = image_folder
+>>>>>>> e6ca36ffeb7183e939f9389d182886aed4b7fd7a
 
 st.write("# Melanoma Classification")
 
@@ -33,6 +47,7 @@ if uploaded_file is not None:
     # Load the image into the array
     data[0] = normalized_image_array
 
+<<<<<<< HEAD
     # run the inference
     prediction = model.predict(data)
     return np.argmax(prediction) # return position of the highest probability
@@ -40,3 +55,7 @@ if uploaded_file is not None:
         st.write("The skin lesion is Benign")
     else:
         st.write("The skin lesion is Malignant. Please see a Dermatologist")
+=======
+if __name__ == '__main__':
+    app.run(debug=True)
+>>>>>>> e6ca36ffeb7183e939f9389d182886aed4b7fd7a
