@@ -1,54 +1,42 @@
-# Create API of ML model using flask
-
-'''
-This code takes the JSON data while POST request an performs the prediction using loaded model and returns
-the results in JSON format.
-'''
-
-# Import libraries
+import streamlit as st
+import sklearn
+import keras.models import load_model
+import keras.preprocessing import image
 import numpy as np
-from flask import Flask, render_template, request
-from keras.models import load_model 
-from keras.preprocessing import image
-import os
 
-app = Flask(__name__)
-
-image_folder = os.path.join('static', 'images')
-app.config["UPLOAD_FOLDER"] = image_folder
-
-# Load the model
-model = load_model('final_model.h5')
-
-@app.route('/')
-def home():
-    return render_template("index.html")
+st.write("# Melanoma Classification")
 
 
-@app.route('/predict',methods=['POST'])
-def predict():
-    # Get the data from the POST request.
-    if request.method == "POST":
-        # predicting images
-        imagefile = request.files['imagefile']
-        image_path = './static/images/' + imagefile.filename 
-        imagefile.save(image_path)
 
-        img = image.load_img(image_path, target_size=(128, 128))
-        x = image.img_to_array(img)
-        x = np.expand_dims(x, axis=0)
-        x /= 255.
+uploaded_image = st.file_uploader("Choose a skin lesion image", type = "jpg")
 
-        # Make prediction using model loaded from disk as per the data.
-        prediction = model.predict(x)
+if uploaded_file is not None:
+    image = Image.open(uploaded_file)
+    st.image(image, caption='Uploaded Skin Lesion', use_column_width=True)
+    st.write("")
+    st.write("Classifying...")
+    # Load the model
+    model = load_model('final_model.h5')
 
-        # Take the first value of prediction
-        if prediction[0]>0.5:
-            return render_template('result.html', output='Malignant! Please see your Dermatologist')
-        else:
-            return render_template('result.html', output='Benign. :)')
+    # Create the array of the right shape to feed into the keras model
+    data = np.ndarray(shape=(1, 128, 128, 3), dtype=np.float32)
+    
+    #image sizing
+    size = (128, 128)
+    image = ImageOps.fit(image, size, Image.ANTIALIAS)
 
-        return render_template("result.html", output=output)
+    #turn the image into a numpy array
+    image_array = np.asarray(image)
+    # Normalize the image
+    normalized_image_array = (image_array.astype(np.float32) / 255.0)
 
-if __name__ == '__main__':
-    app.run(debug=True)
+    # Load the image into the array
+    data[0] = normalized_image_array
+
+    # run the inference
+    prediction = model.predict(data)
+    return np.argmax(prediction) # return position of the highest probability
+    if prediction == 0:
+        st.write("The skin lesion is Benign")
+    else:
+        st.write("The skin lesion is Malignant. Please see a Dermatologist")
