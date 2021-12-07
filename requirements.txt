@@ -1,28 +1,6 @@
-<<<<<<< HEAD
 keras==2.6.0
 numpy==1.19.5
 Pillow==8.2.0
 scikit-learn==0.23.2
 streamlit==1.2.0
-=======
-#Only packages need for app deployment
-certifi==2021.10.8
-click-plugins==1.1.1
-click==8.0.1
-Flask==2.0.2
-itsdangerous==2.0.1
-Jinja2==3.0.2
-joblib==1.0.1
-keras==2.6.0
-Keras-Preprocessing==1.1.2
-MarkupSafe==2.0.1
-numpy==1.19.5
-pandas==1.3.3
-Pillow==8.2.0
-scikit-learn==0.23.2
-scipy==1.7.1
-sklearn==0.0
-threadpoolctl==2.2.0
-Werkzeug==2.0.1
-gunicorn==20.1.0
->>>>>>> e6ca36ffeb7183e939f9389d182886aed4b7fd7a
+
