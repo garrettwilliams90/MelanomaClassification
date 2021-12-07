@@ -6,10 +6,7 @@ from keras.preprocessing import image
 import numpy as np
 from PIL import Image
 
-
 st.write("# Melanoma Classification")
-
-
 
 uploaded_image = st.file_uploader("Choose a skin lesion image", type = "jpg")
 
@@ -38,7 +35,7 @@ if uploaded_file is not None:
 
     # run the inference
     prediction = model.predict(data)
-    return np.argmax(prediction) # return position of the highest probability
+    prediction = np.argmax(prediction) # return position of the highest probability
     if prediction == 0:
         st.write("The skin lesion is Benign")
     else:
