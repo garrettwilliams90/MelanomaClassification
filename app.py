@@ -1,8 +1,11 @@
 import streamlit as st
 import sklearn
-import keras.models import load_model
-import keras.preprocessing import image
+import keras
+from keras.models import load_model
+from keras.preprocessing import image
 import numpy as np
+from PIL import Image
+
 
 st.write("# Melanoma Classification")
 
