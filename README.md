@@ -5,6 +5,16 @@ Australia has the highest rate of melanoma per capita among all countries. This 
 ![Melanoma?](https://raw.githubusercontent.com/garrettwilliams90/MelanomaClassification/main/Images/sunscreen-question-mark.jpeg) <br>
 *Image by [Tatiana Kim](https://www.istockphoto.com/portfolio/TatianaKim?mediatype=photography) via [aad.org](https://www.aad.org/public/everyday-care/sun-protection/sunscreen-patients)*
 
+## Table of Contents
+
+- [Business Understanding](https://github.com/garrettwilliams90/MelanomaClassification#business-understanding)
+- [Data Understanding](https://github.com/garrettwilliams90/MelanomaClassification#data-understanding)
+- [Modeling](https://github.com/garrettwilliams90/MelanomaClassification#modeling)
+- [Evaluation](https://github.com/garrettwilliams90/MelanomaClassification#evaluation)
+- [Conclusion](https://github.com/garrettwilliams90/MelanomaClassification#conclusion)
+- [Future Work](https://github.com/garrettwilliams90/MelanomaClassification#future-work)
+- [Repository Navigation](https://github.com/garrettwilliams90/MelanomaClassification#repository-navigation)
+
 ## Business Understanding
 
 Skin cancer is one of the most common types of cancer in the world. Melanoma, specifically, is responsible for 75% of skin cancer deaths, despite being the least common skin cancer. According to the [World Cancer Research Fund](https://www.wcrf.org/dietandcancer/skin-cancer-statistics/), Australia has the highest rate of Melanoma per capita. [Cancer Australia](https://www.canceraustralia.gov.au/cancer-types/melanoma/statistics) estimates close to 17,000 new cases of Melanoma have been diagnosed in 2021, resulting in over 1,000 deaths this year. 
@@ -72,12 +82,15 @@ There are some future steps that I haven't had time to get started on. With the 
 Lastly, I would be interested in modeling only on darker skin tones because theoretically, it would be harder to classify if someone has Melanoma or not.
 
 ## Repository Navigation
+
 Notebooks
-- All notebooks were run using Kaggle and can be found [here](https://www.kaggle.com/garrettwilliams90/code). <br>
-- My final notebook specifically can be found [here on Kaggle](https://www.kaggle.com/garrettwilliams90/melanoma-classification-final-notebook) or [here on Github](https://github.com/garrettwilliams90/MelanomaClassification/blob/main/melanoma-classification-final-notebook.ipynb) <br>
+- All notebooks were run using Kaggle and can be found [here](https://www.kaggle.com/garrettwilliams90/code).
+- My final notebook specifically can be found [here on Kaggle](https://www.kaggle.com/garrettwilliams90/melanoma-classification-final-notebook) or [here on Github](https://github.com/garrettwilliams90/MelanomaClassification/blob/main/melanoma-classification-final-notebook.ipynb)
+
 Data
-- Orignal Data can be found [here on Kaggle](https://www.kaggle.com/c/siim-isic-melanoma-classification/overview) or [here on the ISIC Archives](https://challenge2020.isic-archive.com/) <br>
+- Orignal Data can be found [here on Kaggle](https://www.kaggle.com/c/siim-isic-melanoma-classification/overview) or [here on the ISIC Archives](https://challenge2020.isic-archive.com/)
 - The 3 datasets that were reformatted by Chris Deotte can be found [here](https://www.kaggle.com/cdeotte/jpeg-melanoma-512x512), [here](https://www.kaggle.com/cdeotte/jpeg-isic2019-512x512), and [here](https://www.kaggle.com/cdeotte/malignant-v2-512x512).
+
 Presentation
 - A pdf of the presentation slides can be found [here](https://github.com/garrettwilliams90/MelanomaClassification/blob/main/presentation.pdf)
 ```
