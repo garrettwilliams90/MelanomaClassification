@@ -84,9 +84,9 @@ Presentation
 ├── Images                                                            <--images used in README                                                          
 ├── Notebooks
 │    ├── Future_Work
-│         ├── evaluate-7-vgg16-with-balanced-class-weights.ipynb <--evaluation for model with class_weight='balanced'
-│         ├── testing-vgg16-model-on-64pixel-images.ipynb             <--started testing on resized images 
-│         └── vgg16-model-with-balanced-class-weight.ipynb      <--started testing model with class_weight='balanced'
+│         ├── evaluate-7-vgg16-with-balanced-class-weights.ipynb      <--preliminary evaluation for model with class_weight='balanced'
+│         ├── testing-vgg16-model-on-64pixel-images.ipynb             <--preliminary work on smaller images 
+│         └── vgg16-model-with-balanced-class-weight.ipynb            <--preliminary work on model with class_weight='balanced'
 │    ├── Model_Evaluations
 │         ├── evaluate-1-baseline-and-2-first-cnn-model.ipynb         <--evaluations for 1st and 2nd iterations
 │         ├── evaluate-3-second-cnn-model-and-4-vgg16-model.ipynb     <--evaluations for 3rd and 4th iterations
