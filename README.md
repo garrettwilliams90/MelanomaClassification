@@ -7,7 +7,7 @@ Australia has the highest rate of melanoma per capita among all countries. This 
 
 ## Table of Contents
 
-- [Business Understanding](#business-understanding)
+- [Business Understanding](business-understanding)
 - [Data Understanding](https://github.com/garrettwilliams90/MelanomaClassification#data-understanding)
 - [Modeling](https://github.com/garrettwilliams90/MelanomaClassification#modeling)
 - [Evaluation](https://github.com/garrettwilliams90/MelanomaClassification#evaluation)
