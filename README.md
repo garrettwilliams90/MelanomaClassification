@@ -81,7 +81,7 @@ I started working on some future steps but didn't have time to include everythin
 
 Notebooks
 - All notebooks were run using Kaggle and can be found [here](https://www.kaggle.com/garrettwilliams90/code).
-- My final notebook specifically can be found [here on Kaggle](https://www.kaggle.com/garrettwilliams90/melanoma-classification-final-notebook) or [here on Github](https://github.com/garrettwilliams90/MelanomaClassification/blob/main/melanoma-classification-final-notebook.ipynb)
+- My final notebook specifically can be found [here on Kaggle](https://www.kaggle.com/garrettwilliams90/melanoma-classification-final-notebook) or [here on Github](https://github.com/garrettwilliams90/MelanomaClassification/blob/main/melanoma-classification-summary.ipynb)
 
 Data
 - Orignal Data can be found [here on Kaggle](https://www.kaggle.com/c/siim-isic-melanoma-classification/overview) or [here on the ISIC Archives](https://challenge2020.isic-archive.com/)
